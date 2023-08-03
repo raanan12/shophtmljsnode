@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='thirdStyle.css'>
+  <script src='thirdScript.js'></script>
+</head>
+
+<body>
+  <div id="header">
+    <div>
+      <img src="pngegg1.png" alt="">
+      <p id="userName"></p>
+    </div>
+    <h1 id="title">Sv-shop</h1>
+    <div id="search">
+      <img src="img2.png" alt="">
+      <input id="searchInpt" oninput="search()" class="search-inpt" type="search" placeholder="Search product by name">
+    </div>
+  </div>
+  <div id="div_sort">
+    <div>
+    <select name="" id="select_sort">
+      <option value="name">By name</option>
+      <option value="price">By price</option>
+    </select>
+
+    <button class="btn" onclick="sort()">sort</button>
+  </div>
+    <button class="btn" id="buyNow" onclick="buy()">Buy Now</button>
+  </div>
+
+  <div id="main">
+    <div id="products">
+    </div>
+
+  </div>
+</body>
+
+</html>
